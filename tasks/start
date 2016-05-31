@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+var gulp = require("../gulpfile.js");
+require("moov_builder").safeStart(gulp)();

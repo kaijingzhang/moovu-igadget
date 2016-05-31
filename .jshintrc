@@ -1,0 +1,44 @@
+{
+    "asi"           : true,   // true: Tolerate missing semicolons
+    "boss"          : true,   // true: Tolerate assignments where comparisons would be expected
+    "browser"       : false,  // Do not tolerate "browser" globals. In the cloud, they do not exist.
+    "bitwise"       : true,   // true: Prohibit bitwise operators
+    "curly"         : true,   // true: Require {} for every new block or scope
+    "debug"         : true,   // true: Tolerate use of debugger statements
+    "devel"         : true,   // Tolerate console statements
+    "eqeqeq"        : true,   // true: Require triple equals (===) for comparison
+    "eqnull"        : true,   // true: Tolerate use of `== null`
+    "esnext"        : true,   // true: Allow ES6 syntax
+    "evil"          : false,  // false: Do not tolerate eval()
+    "expr"          : true,   // true: allow using expressions in place of function or assignment calls
+    "strict"        : false,  // false: Tolerate missing 'use strict' per project file
+    "forin"         : true,   // true: hasOwnProperty must be used to filter properties when inspecting object's keys in for loops
+    "freeze"        : true,   // true: Prohibit overriding prototypes of native objects
+    "latedef"       : true,   // true: Require variables/functions to be defined before being used
+    "maxparams"     : false,  // false: No limit on function parameters
+    "maxdepth"      : false,  // false: No limit on function nesting depth
+    "maxstatements" : false,  // false: No limit on function nesting depth
+    "maxcomplexity" : false,  // false: No limit on cyclomatic complexity
+    "multistr"      : true ,  // true: Allow old-style multiline interpolation
+    "noarg"         : true,   // true: Prohibit use of `arguments.caller` and `arguments.callee`
+    "node"          : true,   // Tolerate use of Node.js global variables
+    "undef"         : true,   // true: Require all non-global variables to be declared (prevents global leaks)
+    "unused"        : true,   // true: Warn variables are declared and never used
+    "predef"       : [
+        "fns",
+        "require",
+        "cheerio",
+        "ctx",
+        "env",
+        "headers",
+        "$",
+        "scoped$",
+        "html",
+        "head",
+        "body",
+        "tag",
+        "text",
+        "breakpoint",
+        "$this"
+    ] // Moovweb specific globals are all valid
+}
